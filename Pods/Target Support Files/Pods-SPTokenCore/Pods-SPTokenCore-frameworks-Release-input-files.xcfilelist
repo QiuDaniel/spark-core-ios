@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-SPTokenCore/Pods-SPTokenCore-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework
+${BUILT_PRODUCTS_DIR}/CoreBitcoin/CoreBitcoin.framework
+${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${PODS_ROOT}/GRKOpenSSLFramework/OpenSSL-iOS/bin/openssl.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/TrezorCrypto/TrezorCrypto.framework
+${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework

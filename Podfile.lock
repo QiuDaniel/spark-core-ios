@@ -1,0 +1,53 @@
+PODS:
+  - BigInt (5.0.0)
+  - CoreBitcoin (0.0.1):
+    - GRKOpenSSLFramework
+  - CryptoSwift (1.3.0)
+  - GRKOpenSSLFramework (1.0.2.19)
+  - MBProgressHUD (1.2.0)
+  - secp256k1.swift (0.1.4)
+  - SwiftLint (0.39.2)
+  - TrezorCrypto (0.0.9)
+
+DEPENDENCIES:
+  - BigInt
+  - CoreBitcoin (from `https://github.com/consenlabs/token-core-ios-dep.git`)
+  - CryptoSwift
+  - GRKOpenSSLFramework
+  - MBProgressHUD
+  - secp256k1.swift
+  - SwiftLint
+  - TrezorCrypto
+
+SPEC REPOS:
+  trunk:
+    - BigInt
+    - CryptoSwift
+    - GRKOpenSSLFramework
+    - MBProgressHUD
+    - secp256k1.swift
+    - SwiftLint
+    - TrezorCrypto
+
+EXTERNAL SOURCES:
+  CoreBitcoin:
+    :git: https://github.com/consenlabs/token-core-ios-dep.git
+
+CHECKOUT OPTIONS:
+  CoreBitcoin:
+    :commit: 48fd18897c7b067b073127ebefd1fbd756fcb66a
+    :git: https://github.com/consenlabs/token-core-ios-dep.git
+
+SPEC CHECKSUMS:
+  BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
+  CoreBitcoin: 23bfc2e0c45106c5a39b240a6ce8f56c3b084ebf
+  CryptoSwift: 1283821600233bdbeb96d7b389c3288c3bf77211
+  GRKOpenSSLFramework: 4abc733a8fcbc37060619a86a54202d2938dd70e
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  TrezorCrypto: bfeea47a052dca2c77d4a39e1e183865e52de14d
+
+PODFILE CHECKSUM: 4de92b39637c16a64478b270e2eacc1d7b833096
+
+COCOAPODS: 1.9.1

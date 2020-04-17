@@ -1,0 +1,6 @@
+framework module Pods_SPTokenCore {
+  umbrella header "Pods-SPTokenCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
