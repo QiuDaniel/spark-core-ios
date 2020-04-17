@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141A5EEB60F30DF24FA1C7C3 /* Pods_SPTokenCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2AFDA1E64C415B624D941F /* Pods_SPTokenCoreTests.framework */; };
+		15CC9D22EF6442FD959402A3 /* Pods_SPTokenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47034F16FADF241B1925994 /* Pods_SPTokenCore.framework */; };
+		65B614A624445FA2000221AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614A524445FA2000221AE /* AppDelegate.swift */; };
+		65B614A824445FA2000221AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614A724445FA2000221AE /* SceneDelegate.swift */; };
+		65B614AA24445FA2000221AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614A924445FA2000221AE /* ViewController.swift */; };
+		65B614AD24445FA2000221AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B614AB24445FA2000221AE /* Main.storyboard */; };
+		65B614AF24445FA3000221AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B614AE24445FA3000221AE /* Assets.xcassets */; };
+		65B614B224445FA3000221AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B614B024445FA3000221AE /* LaunchScreen.storyboard */; };
+		65B614BD24445FA3000221AE /* SPTokenCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614BC24445FA3000221AE /* SPTokenCoreTests.swift */; };
+		65B614CA2444600D000221AE /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614C92444600D000221AE /* Crypto.swift */; };
+		65B614CC24446091000221AE /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614CB24446091000221AE /* JSONObject.swift */; };
+		65B614CF24447317000221AE /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614CE24447317000221AE /* Data+Extension.swift */; };
+		65B614D224447E25000221AE /* TokenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614D124447E25000221AE /* TokenError.swift */; };
+		65B614D524455926000221AE /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614D424455926000221AE /* Encryptor.swift */; };
+		65B614D724455964000221AE /* AES128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614D624455964000221AE /* AES128.swift */; };
+		65B614D9244561C7000221AE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614D8244561C7000221AE /* String+Extension.swift */; };
+		65B614DB24456982000221AE /* Keccak256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614DA24456982000221AE /* Keccak256.swift */; };
+		65B614DD24456C56000221AE /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614DC24456C56000221AE /* Hex.swift */; };
+		65B614DF2445A4DE000221AE /* Keystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614DE2445A4DE000221AE /* Keystore.swift */; };
+		65B614E12445A882000221AE /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614E02445A882000221AE /* PBKDF2.swift */; };
+		65B614E32445B712000221AE /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614E22445B712000221AE /* Scrypt.swift */; };
+		65B614E6244700DC000221AE /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614E5244700DC000221AE /* PublicKey.swift */; };
+		65B614E824470BF0000221AE /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614E724470BF0000221AE /* PrivateKey.swift */; };
+		65B614EA244724AF000221AE /* Crypto+PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614E9244724AF000221AE /* Crypto+PublicKey.swift */; };
+		65B614EC24480E0A000221AE /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614EB24480E0A000221AE /* Mnemonic.swift */; };
+		65B614EE24482D0B000221AE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614ED24482D0B000221AE /* Address.swift */; };
+		65B614F0244832AB000221AE /* EthereumAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614EF244832AB000221AE /* EthereumAddress.swift */; };
+		65B614F22448361F000221AE /* PublicKey+Ethereum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614F12448361F000221AE /* PublicKey+Ethereum.swift */; };
+		65B614F424483F17000221AE /* EthereumChecksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614F324483F17000221AE /* EthereumChecksum.swift */; };
+		65B614F624485C21000221AE /* EthereumKeystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B614F524485C21000221AE /* EthereumKeystore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65B614B924445FA3000221AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65B6149A24445FA2000221AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B614A124445FA2000221AE;
+			remoteInfo = SPTokenCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F491EF79B0697B06CE99FEC /* Pods-SPTokenCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTokenCore.release.xcconfig"; path = "Target Support Files/Pods-SPTokenCore/Pods-SPTokenCore.release.xcconfig"; sourceTree = "<group>"; };
+		4B078D7198A2EC77102E508A /* Pods-SPTokenCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTokenCoreTests.release.xcconfig"; path = "Target Support Files/Pods-SPTokenCoreTests/Pods-SPTokenCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		65B614A224445FA2000221AE /* SPTokenCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPTokenCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B614A524445FA2000221AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65B614A724445FA2000221AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65B614A924445FA2000221AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B614AC24445FA2000221AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65B614AE24445FA3000221AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65B614B124445FA3000221AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65B614B324445FA3000221AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B614B824445FA3000221AE /* SPTokenCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPTokenCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B614BC24445FA3000221AE /* SPTokenCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTokenCoreTests.swift; sourceTree = "<group>"; };
+		65B614BE24445FA3000221AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B614C92444600D000221AE /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		65B614CB24446091000221AE /* JSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONObject.swift; sourceTree = "<group>"; };
+		65B614CE24447317000221AE /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		65B614D124447E25000221AE /* TokenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenError.swift; sourceTree = "<group>"; };
+		65B614D424455926000221AE /* Encryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
+		65B614D624455964000221AE /* AES128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES128.swift; sourceTree = "<group>"; };
+		65B614D8244561C7000221AE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		65B614DA24456982000221AE /* Keccak256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keccak256.swift; sourceTree = "<group>"; };
+		65B614DC24456C56000221AE /* Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hex.swift; sourceTree = "<group>"; };
+		65B614DE2445A4DE000221AE /* Keystore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keystore.swift; sourceTree = "<group>"; };
+		65B614E02445A882000221AE /* PBKDF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKDF2.swift; sourceTree = "<group>"; };
+		65B614E22445B712000221AE /* Scrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		65B614E5244700DC000221AE /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		65B614E724470BF0000221AE /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		65B614E9244724AF000221AE /* Crypto+PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crypto+PublicKey.swift"; sourceTree = "<group>"; };
+		65B614EB24480E0A000221AE /* Mnemonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		65B614ED24482D0B000221AE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		65B614EF244832AB000221AE /* EthereumAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddress.swift; sourceTree = "<group>"; };
+		65B614F12448361F000221AE /* PublicKey+Ethereum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PublicKey+Ethereum.swift"; sourceTree = "<group>"; };
+		65B614F324483F17000221AE /* EthereumChecksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumChecksum.swift; sourceTree = "<group>"; };
+		65B614F524485C21000221AE /* EthereumKeystore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumKeystore.swift; sourceTree = "<group>"; };
+		7981C42BF212D6DEB4A5E79F /* Pods-SPTokenCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTokenCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-SPTokenCoreTests/Pods-SPTokenCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0BF65646478E60D292FD72 /* Pods-SPTokenCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTokenCore.debug.xcconfig"; path = "Target Support Files/Pods-SPTokenCore/Pods-SPTokenCore.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2AFDA1E64C415B624D941F /* Pods_SPTokenCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTokenCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47034F16FADF241B1925994 /* Pods_SPTokenCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTokenCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65B6149F24445FA2000221AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CC9D22EF6442FD959402A3 /* Pods_SPTokenCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B614B524445FA3000221AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141A5EEB60F30DF24FA1C7C3 /* Pods_SPTokenCoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50EB9C314E7999C7C8696999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F47034F16FADF241B1925994 /* Pods_SPTokenCore.framework */,
+				ED2AFDA1E64C415B624D941F /* Pods_SPTokenCoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65B6149924445FA2000221AE = {
+			isa = PBXGroup;
+			children = (
+				65B614A424445FA2000221AE /* SPTokenCore */,
+				65B614BB24445FA3000221AE /* SPTokenCoreTests */,
+				65B614A324445FA2000221AE /* Products */,
+				A538C956FAA5A27407B9487E /* Pods */,
+				50EB9C314E7999C7C8696999 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65B614A324445FA2000221AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65B614A224445FA2000221AE /* SPTokenCore.app */,
+				65B614B824445FA3000221AE /* SPTokenCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65B614A424445FA2000221AE /* SPTokenCore */ = {
+			isa = PBXGroup;
+			children = (
+				65B614C724445FB2000221AE /* Core */,
+				65B614A524445FA2000221AE /* AppDelegate.swift */,
+				65B614A724445FA2000221AE /* SceneDelegate.swift */,
+				65B614A924445FA2000221AE /* ViewController.swift */,
+				65B614AB24445FA2000221AE /* Main.storyboard */,
+				65B614AE24445FA3000221AE /* Assets.xcassets */,
+				65B614B024445FA3000221AE /* LaunchScreen.storyboard */,
+				65B614B324445FA3000221AE /* Info.plist */,
+			);
+			path = SPTokenCore;
+			sourceTree = "<group>";
+		};
+		65B614BB24445FA3000221AE /* SPTokenCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				65B614BC24445FA3000221AE /* SPTokenCoreTests.swift */,
+				65B614BE24445FA3000221AE /* Info.plist */,
+			);
+			path = SPTokenCoreTests;
+			sourceTree = "<group>";
+		};
+		65B614C724445FB2000221AE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				65B614D3244558F9000221AE /* Encryptor */,
+				65B614D024447DEE000221AE /* Foundation */,
+				65B614CD244472FE000221AE /* Utils */,
+				65B614C824445FCD000221AE /* Keystore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		65B614C824445FCD000221AE /* Keystore */ = {
+			isa = PBXGroup;
+			children = (
+				65B614C92444600D000221AE /* Crypto.swift */,
+				65B614E9244724AF000221AE /* Crypto+PublicKey.swift */,
+				65B614CB24446091000221AE /* JSONObject.swift */,
+				65B614DE2445A4DE000221AE /* Keystore.swift */,
+				65B614E42446FE7F000221AE /* Ethereum */,
+			);
+			path = Keystore;
+			sourceTree = "<group>";
+		};
+		65B614CD244472FE000221AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				65B614CE24447317000221AE /* Data+Extension.swift */,
+				65B614D8244561C7000221AE /* String+Extension.swift */,
+				65B614DC24456C56000221AE /* Hex.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		65B614D024447DEE000221AE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				65B614D124447E25000221AE /* TokenError.swift */,
+				65B614E5244700DC000221AE /* PublicKey.swift */,
+				65B614E724470BF0000221AE /* PrivateKey.swift */,
+				65B614EB24480E0A000221AE /* Mnemonic.swift */,
+				65B614ED24482D0B000221AE /* Address.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		65B614D3244558F9000221AE /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				65B614D424455926000221AE /* Encryptor.swift */,
+				65B614D624455964000221AE /* AES128.swift */,
+				65B614DA24456982000221AE /* Keccak256.swift */,
+				65B614E02445A882000221AE /* PBKDF2.swift */,
+				65B614E22445B712000221AE /* Scrypt.swift */,
+			);
+			path = Encryptor;
+			sourceTree = "<group>";
+		};
+		65B614E42446FE7F000221AE /* Ethereum */ = {
+			isa = PBXGroup;
+			children = (
+				65B614EF244832AB000221AE /* EthereumAddress.swift */,
+				65B614F12448361F000221AE /* PublicKey+Ethereum.swift */,
+				65B614F324483F17000221AE /* EthereumChecksum.swift */,
+				65B614F524485C21000221AE /* EthereumKeystore.swift */,
+			);
+			path = Ethereum;
+			sourceTree = "<group>";
+		};
+		A538C956FAA5A27407B9487E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA0BF65646478E60D292FD72 /* Pods-SPTokenCore.debug.xcconfig */,
+				3F491EF79B0697B06CE99FEC /* Pods-SPTokenCore.release.xcconfig */,
+				7981C42BF212D6DEB4A5E79F /* Pods-SPTokenCoreTests.debug.xcconfig */,
+				4B078D7198A2EC77102E508A /* Pods-SPTokenCoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65B614A124445FA2000221AE /* SPTokenCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B614C124445FA3000221AE /* Build configuration list for PBXNativeTarget "SPTokenCore" */;
+			buildPhases = (
+				CB0701A2F8FD77B6449A22D8 /* [CP] Check Pods Manifest.lock */,
+				65B6149E24445FA2000221AE /* Sources */,
+				65B6149F24445FA2000221AE /* Frameworks */,
+				65B614A024445FA2000221AE /* Resources */,
+				1B0C468D7D38D509D3D1E7B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPTokenCore;
+			productName = SPTokenCore;
+			productReference = 65B614A224445FA2000221AE /* SPTokenCore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65B614B724445FA3000221AE /* SPTokenCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B614C424445FA3000221AE /* Build configuration list for PBXNativeTarget "SPTokenCoreTests" */;
+			buildPhases = (
+				4AB88693CEE5C59F634F4014 /* [CP] Check Pods Manifest.lock */,
+				65B614B424445FA3000221AE /* Sources */,
+				65B614B524445FA3000221AE /* Frameworks */,
+				65B614B624445FA3000221AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65B614BA24445FA3000221AE /* PBXTargetDependency */,
+			);
+			name = SPTokenCoreTests;
+			productName = SPTokenCoreTests;
+			productReference = 65B614B824445FA3000221AE /* SPTokenCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65B6149A24445FA2000221AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "SPARK-Daniel";
+				TargetAttributes = {
+					65B614A124445FA2000221AE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					65B614B724445FA3000221AE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 65B614A124445FA2000221AE;
+					};
+				};
+			};
+			buildConfigurationList = 65B6149D24445FA2000221AE /* Build configuration list for PBXProject "SPTokenCore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65B6149924445FA2000221AE;
+			productRefGroup = 65B614A324445FA2000221AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65B614A124445FA2000221AE /* SPTokenCore */,
+				65B614B724445FA3000221AE /* SPTokenCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65B614A024445FA2000221AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B614B224445FA3000221AE /* LaunchScreen.storyboard in Resources */,
+				65B614AF24445FA3000221AE /* Assets.xcassets in Resources */,
+				65B614AD24445FA2000221AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B614B624445FA3000221AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B0C468D7D38D509D3D1E7B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPTokenCore/Pods-SPTokenCore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPTokenCore/Pods-SPTokenCore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPTokenCore/Pods-SPTokenCore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AB88693CEE5C59F634F4014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPTokenCoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0701A2F8FD77B6449A22D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPTokenCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65B6149E24445FA2000221AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B614D524455926000221AE /* Encryptor.swift in Sources */,
+				65B614F22448361F000221AE /* PublicKey+Ethereum.swift in Sources */,
+				65B614D224447E25000221AE /* TokenError.swift in Sources */,
+				65B614E6244700DC000221AE /* PublicKey.swift in Sources */,
+				65B614AA24445FA2000221AE /* ViewController.swift in Sources */,
+				65B614A624445FA2000221AE /* AppDelegate.swift in Sources */,
+				65B614F624485C21000221AE /* EthereumKeystore.swift in Sources */,
+				65B614EA244724AF000221AE /* Crypto+PublicKey.swift in Sources */,
+				65B614F0244832AB000221AE /* EthereumAddress.swift in Sources */,
+				65B614F424483F17000221AE /* EthereumChecksum.swift in Sources */,
+				65B614A824445FA2000221AE /* SceneDelegate.swift in Sources */,
+				65B614D724455964000221AE /* AES128.swift in Sources */,
+				65B614E12445A882000221AE /* PBKDF2.swift in Sources */,
+				65B614CA2444600D000221AE /* Crypto.swift in Sources */,
+				65B614EC24480E0A000221AE /* Mnemonic.swift in Sources */,
+				65B614DF2445A4DE000221AE /* Keystore.swift in Sources */,
+				65B614CC24446091000221AE /* JSONObject.swift in Sources */,
+				65B614DB24456982000221AE /* Keccak256.swift in Sources */,
+				65B614EE24482D0B000221AE /* Address.swift in Sources */,
+				65B614DD24456C56000221AE /* Hex.swift in Sources */,
+				65B614E32445B712000221AE /* Scrypt.swift in Sources */,
+				65B614D9244561C7000221AE /* String+Extension.swift in Sources */,
+				65B614CF24447317000221AE /* Data+Extension.swift in Sources */,
+				65B614E824470BF0000221AE /* PrivateKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B614B424445FA3000221AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B614BD24445FA3000221AE /* SPTokenCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65B614BA24445FA3000221AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65B614A124445FA2000221AE /* SPTokenCore */;
+			targetProxy = 65B614B924445FA3000221AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65B614AB24445FA2000221AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B614AC24445FA2000221AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65B614B024445FA3000221AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B614B124445FA3000221AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65B614BF24445FA3000221AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65B614C024445FA3000221AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65B614C224445FA3000221AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0BF65646478E60D292FD72 /* Pods-SPTokenCore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27W4ZZ25T9;
+				INFOPLIST_FILE = SPTokenCore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkpool.SPTokenCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65B614C324445FA3000221AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F491EF79B0697B06CE99FEC /* Pods-SPTokenCore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27W4ZZ25T9;
+				INFOPLIST_FILE = SPTokenCore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkpool.SPTokenCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65B614C524445FA3000221AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7981C42BF212D6DEB4A5E79F /* Pods-SPTokenCoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27W4ZZ25T9;
+				INFOPLIST_FILE = SPTokenCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkpool.SPTokenCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPTokenCore.app/SPTokenCore";
+			};
+			name = Debug;
+		};
+		65B614C624445FA3000221AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B078D7198A2EC77102E508A /* Pods-SPTokenCoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27W4ZZ25T9;
+				INFOPLIST_FILE = SPTokenCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkpool.SPTokenCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPTokenCore.app/SPTokenCore";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65B6149D24445FA2000221AE /* Build configuration list for PBXProject "SPTokenCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B614BF24445FA3000221AE /* Debug */,
+				65B614C024445FA3000221AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B614C124445FA3000221AE /* Build configuration list for PBXNativeTarget "SPTokenCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B614C224445FA3000221AE /* Debug */,
+				65B614C324445FA3000221AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B614C424445FA3000221AE /* Build configuration list for PBXNativeTarget "SPTokenCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B614C524445FA3000221AE /* Debug */,
+				65B614C624445FA3000221AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65B6149A24445FA2000221AE /* Project object */;
+}
